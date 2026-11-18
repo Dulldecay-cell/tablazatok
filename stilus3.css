@@ -1,0 +1,54 @@
+body{
+    background-image: url(tel1\ \(1\).jpg);
+}
+main{
+    width: 100%;
+    max-width: 1000px;
+    margin: 75pt;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    grid-template-areas:
+    "h h h"
+    "n ar as"
+    "f f f"
+}
+header{
+    background-image:url(hatter\ \(1\).jpg) ;
+    color: white;
+    grid-area: h;
+    text-align: center;
+}
+nav{
+    background-color: white;
+    grid-area: n;
+}
+article{
+    background-color: white;
+    grid-area: ar;
+}
+.tabla1 img{
+    width: 40%;
+}
+.tabla2 img{
+    width: 40%;
+}
+aside{
+    background-color: white;
+    grid-area: as;
+}
+footer{
+    background-color:blue ;
+    grid-area: f;
+}
+@media screen and (max-width:600px) {
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "h"
+        "n"
+        "ar"
+        "as"
+        "f"
+    }
+}

@@ -1,0 +1,20 @@
+
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    height: 50pt;
+    width: 50pt;
+}
+th{
+    width: 15pt;
+    color: lightgoldenrodyellow;
+    background-color:black;
+}
+tr:nth-child(odd) td:nth-child(even){
+    background-color: gray;
+}
+tr:nth-child(even) td:nth-child(odd){
+    background-color: gray;
+}
